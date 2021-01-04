@@ -13,8 +13,6 @@ const PlayerPage = () => {
       <NavBar></NavBar>
 
       <Layout>
-        {/*<Title></Title>*/}
-
         {player && (
           <>
             <CharacterCard ranger={player.ranger}></CharacterCard>
