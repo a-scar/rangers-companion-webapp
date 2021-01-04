@@ -25,8 +25,6 @@ export default function SignUp({ errorMessage, onSubmit }) {
         {/*>*/}
         {/*  Sign Up*/}
         {/*</button>*/}
-
-        {/*<Image src="/signup.svg" alt="Signup" width="64" height="64" />*/}
       </form>
     </Layout>
   );
