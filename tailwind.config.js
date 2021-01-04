@@ -12,6 +12,7 @@ module.exports = {
       green: colors.emerald,
       black: colors.black,
       white: colors.white,
+      purple: colors.purple,
     },
     darkMode: "class",
     fontFamily: {

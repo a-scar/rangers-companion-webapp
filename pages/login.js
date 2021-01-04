@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { useRouter } from "next/router";
-import { usePlayer } from "../lib/hooks";
 import Layout from "../components/layout";
 import { useEffect } from "react";
 import { Magic } from "magic-sdk";
 import SignUp from "../components/signup_form";
+import NavBar from "../components/nav_bar";
+import Image from "next/Image";
 
 const Login = () => {
-  // usePlayer({ redirectTo: "/player", redirectIfFound: true });
   const router = useRouter();
 
   const [errorMsg, setErrorMsg] = useState("");
@@ -48,9 +48,17 @@ const Login = () => {
   }, []);
 
   return (
-    <Layout>
-      <SignUp errorMessage={errorMsg} onSubmit={handleSubmit} />
-    </Layout>
+    <Fragment>
+      <NavBar></NavBar>
+
+      <div className="text-center mt-4">
+        <Image src="/unlock.svg" alt="Login" width="200" height="200" />
+      </div>
+
+      <Layout>
+        <SignUp errorMessage={errorMsg} onSubmit={handleSubmit} />
+      </Layout>
+    </Fragment>
   );
 };
 

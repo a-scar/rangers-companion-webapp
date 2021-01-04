@@ -1,5 +1,5 @@
 import { encryptSession, getSession } from "../../lib/iron";
-import { connectToDatabase } from "../mongo.utility";
+import { connectToDatabase } from "../../lib/mongo.utility";
 import { setTokenCookie } from "../../lib/auth-cookies";
 import Player from "../../models/Player";
 
@@ -20,9 +20,9 @@ export default async function player(req, res) {
 
   if (session) {
     try {
-      const player = await Player.find({ email: `${session.email}` });
+      const player = await Player.findOne({ email: `${session.email}` });
       // await resetCookies(session);
-
+      console.log(JSON.stringify(player));
       if (!player) {
         throw new Error("Could not find player");
       }

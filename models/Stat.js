@@ -1,4 +1,4 @@
-export const Stats = {
+export const Stat = {
   move: String,
   fight: String,
   shoot: String,

@@ -1,24 +1,27 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import Title from "../components/title";
-import ButtonBar from "../components/button_bar";
+import NavBar from "../components/nav_bar";
 import { Fragment } from "react";
+import CharacterCard from "../components/character_card";
 
 export default function Home() {
   return (
     <Fragment>
-      <ButtonBar></ButtonBar>
+      <NavBar></NavBar>
 
       <Layout>
         <Head>
-          <title>My page title</title>
+          <title>Rangers Companion App</title>
+          <link rel="icon" href="/favicon.ico" />
+
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
 
-        <Title></Title>
+        {/*<Title></Title>*/}
       </Layout>
     </Fragment>
   );
