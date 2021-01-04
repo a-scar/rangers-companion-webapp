@@ -19,7 +19,7 @@ export default function Home() {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        Home page content will be here
+        Home page content will be here ok
       </Layout>
     </Fragment>
   );
