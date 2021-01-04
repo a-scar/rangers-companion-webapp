@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { Magic } from "magic-sdk";
 import SignUp from "../components/signup_form";
 import NavBar from "../components/nav_bar";
-import Image from "next/Image";
+import Image from "next/image";
 
 const Login = () => {
   const router = useRouter();

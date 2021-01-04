@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/Image";
 import { Navbar, Nav } from "react-bootstrap";
 
 export default function NavBar(props) {
