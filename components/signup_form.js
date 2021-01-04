@@ -17,14 +17,6 @@ export default function SignUp({ errorMessage, onSubmit }) {
         >
           Sign Up / Login
         </button>
-
-        {/*<button*/}
-        {/*  className="bg-blue-600 hover:bg-blue-700 duration-300 text-white shadow p-2 rounded-r"*/}
-        {/*  type="submit"*/}
-        {/*  onClick={subscribe}*/}
-        {/*>*/}
-        {/*  Sign Up*/}
-        {/*</button>*/}
       </form>
     </Layout>
   );
