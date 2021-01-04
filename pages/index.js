@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import Title from "../components/title";
 import NavBar from "../components/nav_bar";
 import { Fragment } from "react";
-import CharacterCard from "../components/character_card";
 
 export default function Home() {
   return (
@@ -20,8 +19,7 @@ export default function Home() {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-
-        {/*<Title></Title>*/}
+        Home page content will be here
       </Layout>
     </Fragment>
   );
